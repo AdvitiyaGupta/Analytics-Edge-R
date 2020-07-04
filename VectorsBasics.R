@@ -86,3 +86,6 @@ x = NULL
 x
 
 x[4]
+
+#matrix
+(matrix_a <- matrix(1:10, byrow = TRUE, ncol = 2))
