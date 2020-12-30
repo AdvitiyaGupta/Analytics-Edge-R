@@ -36,6 +36,11 @@ mtcars[order(mtcars$cyl, -mtcars$mpg), c('cyl','mpg','wt')] # desc mpg
 # rank():
 x=c(1,2,36,3)
 rank(x)
+
+x1=c(1,20,20,30,30,40,40,50)
+rank(x1,ties.method = 'min')
+rank(x1,ties.method = 'max')
+
 rank(mtcars$mpg, ties.method = 'min')
 # rank(mtcars$mpg, ties.method = 'max')
 rorder =cbind(mtcars$mpg, rank(mtcars$mpg, ties.method = 'max'))
