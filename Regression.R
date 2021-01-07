@@ -37,8 +37,6 @@ library("ggplot2")
 g <- ggplot(df, aes(x=hieght, y=age)) + geom_point() + geom_smooth(method="lm") 
 plot(g)
 
-getwd()
-
 #Exercise2:
 names(mtcars)
 View(mtcars)
